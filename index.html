@@ -21,7 +21,7 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="index.html"><img src="img/logo.png" height="30" width="41"></a>
+            <a class="navbar-brand " href="index.html"><img src="img/logo.png" height="30" width="41"></a>
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
@@ -34,13 +34,19 @@
     </nav>
     <header class="jumbotron">
         <div class="container">
-            <div class="row row-heder">
-                <div class="col-12 col-sm-8">
+            <div class="row">
+                <div class="col-12 col-sm-6">
                     <h1>Ristorante con Fusion</h1>
-                    <p>We take inspiration from the World's best cuisines, and create a unique fusion experience.<br> Our lipsmacking creations will tickle your culinary senses!</p>
+                    <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class=" col-12 col-sm align-self-center ">
+                <div class=" col-12 col-sm-3 align-self-center ">
                     <img src="img/logo.png" class="img-fluid">
+                </div>
+                
+                <div class="col-12 col-sm-3 align-self-center">
+                    <a class="btn btn-warning btn-sm align-self-center" style="height: auto;width: 200px;font-size: large;" href="#A" role="button">
+                       <strong>Reserve Table</strong> 
+                    </a>
                 </div>
             </div>
         </div>  
@@ -73,14 +79,18 @@
         <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 col-md-3">
                 <h3>This Month's Promotions</h3>
-            </div>
+            </div>           
             <div class="col col-sm col-md">
-                
-                <h2>Weekend Grand Buffet</h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                <div class="media">
+                    <img class="d-flex ml-3 img-thumbnail align-self-center order-sm-last order-last"
+                     src="img/buffet.png" alt="promotions">
+                     <div class="media-body">
+                        <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
+                        <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                    </div>
+                </div>
             </div>
         </div>
-
         <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 order-sm-last col-md-3">
                 <h3>Meet our Culinary Specialists</h3>
@@ -88,7 +98,7 @@
             <div class="col col-sm order-sm-first col-md">
                 <div class="media">
                     <img class="d-flex mr-3 img-thumbnail align-self-center"
-                            src="img/alberto.png" alt="Alberto Somayya">
+                     src="img/alberto.png" alt="Alberto">
                     <div class="media-body">
                         <h2 class="mt-0">Alberto Somayya</h2>
                         <h4>Executive Chef</h4>
@@ -99,6 +109,71 @@
                             </p>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="row row-content align-self-center">
+            <div class="col-12 col-sm-6 offset-sm-3">
+                <div class="card"  id="A" >
+                    <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
+                    <div class="card-body">
+                        
+                            <form>
+                                <div class="form-group row">
+                                    <label for="number of guests" class="col-12 col-sm-3 col-form label" style="font-weight: bold;">
+                                      Number of Guests
+                                    </label>
+                                    <div>
+                                    <div class="col-sm-12" style="font-weight: bold;">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                            <label class="form-check-label" for="inlineRadio1">1</label>
+                                          </div>
+                                          <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                            <label class="form-check-label" for="inlineRadio2">2</label>
+                                          </div>
+                                          <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                            <label class="form-check-label" for="inlineRadio3">3</label>
+                                          </div>
+                                          <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+                                            <label class="form-check-label" for="inlineRadio4">4</label>
+                                          </div>
+                                          <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5">
+                                            <label class="form-check-label" for="inlineRadio5">5</label>
+                                          </div>
+                                          <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option6">
+                                            <label class="form-check-label" for="inlineRadio6">6</label>
+                                        </div>
+                                       
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                        <label for="telnum" class=" col-12 col-sm-3 col-form label" style="font-weight: bold;">
+                                            Date and Time
+                                        </label>
+                                        <div class="col-8 col-sm-4">
+                                            <input type="datee" class="form-control" id="datee" name="datee"
+                                            placeholder="Date" style="font-weight: bold;">
+                                            
+                                        </div>
+                                        <div class="col-8 col-sm-4">
+                                            <input type="timee" class="form-control" id="timee" name="timee"
+                                            placeholder="Time" style="font-weight: bold;">
+                                            
+                                        </div>
+                                </div>
+                                <button type="button" class="btn btn-primary offset-sm-5" style="font-weight: bold;">
+                                    Reserve
+                                </button>
+                            </form>    
+                        </dt>
+                    </div>
+                </div>        
             </div>
         </div>
     </div>
