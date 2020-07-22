@@ -5,7 +5,7 @@
     min-height: 400px;
 }
 .footer{
-    background-color: lightsteelblue;
+    background-color: #D1C4E9;
     margin: 0px auto;
     padding: 20px 0px 20px 0px;
 }
@@ -14,6 +14,8 @@
     padding: auto;
     margin: 0px auto;
     color:black;
+    background-color: #9575CD ;
+    color:floralwhite;
     
 }
 .address{
@@ -27,14 +29,11 @@ body{
 }
 
 .navbar-dark {
-    background-color: lightsalmon ;
+    
+    background-color: #512DA8;
 }
 
-.breadcrumb{
-    background-color: lightcyan;
-    
-     
-}
+
 
 .tab-content {
     border-left: 1px solid #ddd;
@@ -63,3 +62,19 @@ body{
 
     min-height: 200px;
 }
+
+
+
+.a{
+    margin-top: 10px;
+
+}
+
+.b{
+    margin-top: 5px;
+}
+
+.c{
+    margin-top:5px;
+}
+ 
