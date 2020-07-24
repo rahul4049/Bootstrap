@@ -30,18 +30,20 @@
                                     </ul>
                                     
                                     <span class="navbar-text">
-                                        <a data-toggle="modal" data-target="#loginModal">
-                                        <span class="fa fa-sign-in"></span> Login</a>
+                                       <a type="button" id="LoginButton">
+                                           <span class="fa fa-sign-in"></span> Login</a>
+                                       
                                     </span>
                                 </div>           
                             </div>
                         </nav>
                         
                     
-                        <div id="loginModal" class="modal fade" role="dialog">
+                        <div id="LoginModal" class="modal fade" role="dialog">
                             <div class="modal-dialog modal-lg" role="content">
                                 <div class="modal-content">
                                     <div class="modal-header">
+                                        <a></a>
                                         <h4 class="modal-title">Login </h4>
                                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                                     </div>
@@ -57,7 +59,7 @@
                                                     <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Password">
                                                 </div>
                                                 <div class="col-sm-auto">
-                                                    <div class="form-check">
+                                                    <div class="form-check d">
                                                         <input class="form-check-input" type="checkbox">
                                                         <label class="form-check-label"> Remember me
                                                         </label>
@@ -170,9 +172,7 @@
                                     </div>
                                     
                                     <div class="col-12 col-sm-auto align-self-center">
-                                        <a role="button" class="btn btn-block nav-link btn-warning text-white"
-                                        data-toggle="modal" data-target="#ReserveModal"
-                                            data-placement="bottom" href="#A" style="width: 200px; font-weight: 500;">Reserve Table</a>
+                                        <button class="btn btn-block nav-link btn-warning " style="width: 200px; font-weight: 500; color: floralwhite;" id="ReserveButton">Reserve Table</button>
                                             
                                     </div>
                                 </div>
@@ -427,8 +427,16 @@
                                         $('#carouselButton').children('span').addClass('fa-pause')
                                     }
                                 });
+                                $("#ReserveButton").click(function() {
+                                    $('#ReserveModal').modal("toggle")
+                                });
+                                $("#LoginButton").click(function() {
+                                    $('#LoginModal').modal("toggle");
+                                });
                             });
+                            
                         </script>
+                        
                     
                     </body>
                     

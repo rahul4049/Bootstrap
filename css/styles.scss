@@ -68,9 +68,44 @@ body{
     }
 }
 
+.carousel-caption{
+
+    min-height: 200px;
+}
+
+.a{
+    margin-top: 10px;
+
+}
+
+.b{
+    margin-top: 5px;
+}
+
+.c{
+    margin-top:5px;
+}
+
 #carouselButton {
     right:0px;
     position: absolute;
     bottom: 0px;
     z-index: 1;
+}
+
+.modal-header{
+    background-color: $background-dark;
+    color: floralwhite;
+    
+
+    .close{
+
+        color: floralwhite;
+
+    }
+}
+
+.modal-body{
+    background-color: $background-pale;
+    
 }
